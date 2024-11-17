@@ -1,0 +1,106 @@
+.sobrenos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .first__section-sobrenos {
+        max-width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        #first__section-img {
+            width: 30%;
+        }
+    
+        &-content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+    
+            h1 {
+                font-size: 2rem;
+                color: $cor-secundaria;
+                font-weight: 800;
+            }
+    
+            p {
+                @include p-default;
+                color: $cor-preto;
+            }
+        }
+    }
+    
+    .second__section-sobrenos {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 40px;
+        margin: 50px 50px;
+    
+        .second-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+    
+            span {
+                color: $cor-secundaria;
+                font-weight: 600;
+            }
+    
+            p {
+                @include p-default;
+                color: $cor-preto;
+            }
+        }
+    }
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+
+.sobrenos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    .first__section-sobrenos {
+        max-width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        #first__section-img {
+            width: 30%;
+        }
+
+        &-content {
+            margin: 0 auto;
+            padding: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            h1 {
+                font-size: 2rem;
+                color: $cor-secundaria;
+                font-weight: 800;
+            }
+
+            p {
+                @include p-default;
+                color: $cor-secundaria;
+            }
+        }
+    }
+}
+}
